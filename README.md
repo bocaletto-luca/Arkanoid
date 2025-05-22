@@ -50,7 +50,3 @@ This project is licensed under the GPL License.
 ## Author
 
 Developed by [Bocaletto Luca](https://bocaletto-luca.github.io).
-
-## Topics
-
-arkanoid, brickbreaker, arcade, retro, html5, css3, javascript, php, bootstrap, browsergame, open-source, multi-input, record-tracking

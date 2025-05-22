@@ -1,0 +1,62 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.btn-custom {
+  margin-top: 10px;
+}
+
+/* Header generale: imposta un'altezza, background e centro verticale/orizzontale */
+.site-header {
+  height: 250px;  /* Regola in base alle tue esigenze */
+  background: linear-gradient(45deg, #1a2a6c, #b21f1f, #fdbb2d);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header Content: layout a colonna con tutto centrato */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Logo styling */
+.logo img {
+  max-width: 100px;  /* Regola la dimensione in base al logo */
+}
+
+/* Titolo principale con effetto 3D */
+.main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  /* Effetto 3D con multiple ombre */
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2), 8px 8px 0 rgba(0, 0, 0, 0.15);
+  transform: perspective(500px) rotateX(2deg) rotateY(2deg);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Sottotitolo elegante */
+.subtitle {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Responsive: ridimensiona i testi su dispositivi piccoli */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}

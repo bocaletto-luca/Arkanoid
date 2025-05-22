@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+      index.html - Arkanoid Game In-Game Page
+      Author: Bocaletto Luca
+      
+      Description:
+      This HTML file sets up the Arkanoid game interface. It includes:
+        • An information bar displaying player, level, and score details.
+        • A canvas element for rendering the game.
+        • A final overlay for end-of-game messages and an exit button.
+        • An additional exit button below the canvas.
+      It also links to Bootstrap CSS, a custom style sheet (style.css), and the game scripts (controller.js, stage.js, main.js).
+      The order of the script inclusion is important for dependencies.
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arkanoid Game | In Game | By Bocaletto Luca</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Styles for the game page */
+    #gameInfo {
+      text-align: center;
+      background: #333;
+      color: #fff;
+      padding: 10px;
+    }
+    
+    /* Canvas for rendering the game */
+    #gameCanvas {
+      background: black;
+      display: block;
+      margin: 20px auto;
+    }
+    
+    /* Final overlay displayed at the end of the game */
+    #finalOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      color: white;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    /* Margin added to the button inside the final overlay */
+    #finalOverlay button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Information Bar: Displays player, level, and score -->
+  <div id="gameInfo" class="bg-dark py-2">
+    <span id="playerDisplay"></span>
+    <span id="levelDisplay"></span>
+    <span id="scoreDisplay"></span>
+  </div>
+  
+  <!-- Game Canvas: The main area where the game is drawn -->
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+  
+  <!-- Final Overlay: Shown when the game ends -->
+  <div id="finalOverlay">
+    <div id="finalMessage"></div>
+    <button id="finalExitButton" class="btn btn-danger">Exit</button>
+  </div>
+  
+  <!-- Exit Button: Provides another way to leave the game -->
+  <div class="text-center mt-3">
+    <button id="exitButton" class="btn btn-danger">Exit</button>
+  </div>
+  
+  <!-- Script Inclusion (the order is important) -->
+  <script src="controller.js"></script> <!-- optional -->
+  <script src="stage.js"></script>
+  <script src="main.js"></script>
+  <script>
+    (function(){
+      // Helper function to retrieve query parameters from the URL
+      function getQueryParam(param) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(param);
+      }
+      
+      // Get the player's name from the URL, defaulting to "Player" if not provided
+      const playerName = getQueryParam("player") || "Player";
+      
+      // Display the player's name in the information bar
+      document.getElementById("playerDisplay").innerText = "Player: " + playerName;
+    })();
+    
+    // Event listener for the exit button: redirects to index.html when clicked
+    document.getElementById("exitButton").addEventListener("click", function(){
+      window.location.href = "index.html";
+    });
+    
+    // Event listener for the final overlay exit button: also redirects to index.html when clicked
+    document.getElementById("finalExitButton").addEventListener("click", function(){
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+      help.html - Help Page for Arkanoid Game
+      Author: Bocaletto Luca
+
+      Description:
+      This HTML page provides instructions for playing Arkanoid, detailing the game controls,
+      types of bricks, power‑up capsules, and general game objectives.
+      The content is styled using Bootstrap and custom CSS for an engaging user experience.
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help - Arkanoid Game</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Arkanoid Game Instructions</h1>
+    <div class="card mx-auto" style="max-width:600px;">
+      <div class="card-body">
+        <p>Welcome to Arkanoid, the classic brick-breaking game!</p>
+        <p><strong>Controls:</strong></p>
+        <ul>
+          <li><strong>Left/Right Arrow</strong>: Move the paddle</li>
+          <li><strong>Mouse/Touch</strong>: Move the paddle by following the cursor or touch</li>
+          <li><strong>Space Bar</strong>: Launch the ball</li>
+          <li><strong>'S' Key</strong>: During the "shoot" power‑up (obtained by collecting a Gold capsule), fire special projectiles</li>
+        </ul>
+        <p><strong>Types of Bricks:</strong></p>
+        <ul>
+          <li><em>White, Green, Blue, Purple, Brown</em>: Break with one hit.</li>
+          <li><em>Gray</em>: Indestructible bricks – the ball always bounces.</li>
+          <li><em>Gold</em>: Break with one hit and, with a defined probability, release power‑up capsules.</li>
+          <li><em>Copper</em>: Require two hits; on first impact they change color (randomly) to indicate damage, on the second hit they break.</li>
+        </ul>
+        <p><strong>Power‑up Capsules:</strong></p>
+        <ul>
+          <li>The <em>red capsule ("shoot")</em> allows you to fire special projectiles (press S for 5 seconds).</li>
+          <li>The <em>blue capsule ("paddleBoost")</em> increases the paddle width by 30px for 5 seconds.</li>
+        </ul>
+        <p>Complete all levels to finish the game and achieve the highest score.</p>
+        <p>Have fun and thank you for playing Arkanoid!</p>
+        <div class="text-center">
+          <button onclick="window.history.back()" class="btn btn-primary">Go Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

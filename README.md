@@ -21,6 +21,14 @@ Arkanoid Game is a modern browser remake of the classic brick-breaker that blend
 *GitHub Short Description:*  
 Arkanoid Game is a modern browser remake of the classic brick-breaker with multi-input support, dynamic levels, thrilling power‑ups, and record tracking for endless arcade fun!
 
+## Screenshot
+
+![Screenshot 2025-07-04 at 16-11-57 Arkanoid Game In Game By Bocaletto Luca](https://github.com/user-attachments/assets/b880b9aa-2d71-4d99-ba82-3ad2f64c53ef)
+
+![Screenshot 2025-07-04 at 16-12-11 Arkanoid Game In Game By Bocaletto Luca](https://github.com/user-attachments/assets/ad9e9f2d-21e9-4685-9d5e-d832e237bade)
+
+![Screenshot 2025-07-04 at 16-11-45 Arkanoid WebGame Bocaletto Luca](https://github.com/user-attachments/assets/0b4aa8d0-8fb8-443d-bdaf-4a8ff83509a6)
+
 ## WEB Site
 
 - [GitHub Pages](https://bocaletto-luca.github.io)

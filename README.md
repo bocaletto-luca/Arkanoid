@@ -12,6 +12,8 @@
 [![Multi-Platform](https://img.shields.io/badge/Multi--Platform-Yes-blueviolet?style=flat-square)]()
 [![Web Games](https://img.shields.io/badge/Web%20Games-Yes-orange?style=flat-square)]()
 
+[![Test Online](https://img.shields.io/badge/Test%20Online-Click%20Here-brightgreen?style=for-the-badge)](https://bocaletto-luca.github.io/Arkanoid/index.html)
+
 ## Description
 
 Arkanoid Game is a modern browser remake of the classic brick-breaker that blends retro charm with contemporary challenges. Developed by **Bocaletto Luca**, it features multi-input support (keyboard, mouse, touch, and gamepad), dynamic levels, configurable brick layouts, power‑ups, and record tracking through a PHP backend.
